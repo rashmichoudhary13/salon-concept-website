@@ -185,13 +185,40 @@ a {
 /* Responsive Header */
 @media (max-width: 992px) {
   .header-container {
-    grid-template-columns: 1fr auto;
-    padding: 15px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
   }
 
   .header-nav {
     display: none;
-    /* In a full app this would be a hamburger menu, but we replicate the standard layout */
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -15px; /* Compels the logo to shift left, eliminating the image's empty side space */
+  }
+
+  .header-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    max-height: 44px !important;
+  }
+  
+  .btn-book {
+    padding: 10px 16px !important;
+    font-size: 10px !important;
+  }
+
+  .header-container {
+    padding: 12px 10px;
   }
 }
 
@@ -412,15 +439,49 @@ a {
 @media (max-width: 992px) {
   .hero-container {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 40px;
   }
 
   .hero-title {
-    font-size: 42px;
+    font-size: clamp(32px, 8vw, 54px);
+    letter-spacing: -1px;
   }
 
   .hero-section {
-    padding: 120px 5% 60px;
+    padding: 140px 6% 60px;
+  }
+
+  .hero-tags {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: clamp(28px, 9vw, 36px);
+    letter-spacing: -0.5px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-top: 20px;
+  }
+
+  .stat-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .stat-val {
+    font-size: 28px;
+    margin-bottom: 0;
+    min-width: 80px;
+  }
+
+  .stat-lbl {
+    font-size: 10px;
   }
 }
 
@@ -850,7 +911,7 @@ a {
   display: flex;
   overflow: hidden;
   user-select: none;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 60px;
 }
 
