@@ -30,8 +30,8 @@ export default function Header() {
         <div className="header-logo">
           <Link href="/">
             <Image
-              src="/assets/logo.png"
-              alt="Chandramauli Salon"
+              src="/assets/salon_logo2.png"
+              alt="Chandraka Salon"
               width={200}
               height={100}
               priority

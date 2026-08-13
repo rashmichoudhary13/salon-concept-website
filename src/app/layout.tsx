@@ -24,7 +24,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Chandramauli Salon",
+  title: "Chandraka Salon",
   description: "Luxury Hair Transformations That Turn Heads. Balayage • Global Colour • Aqua Therapy • Brazilian Treatment.",
 };
 

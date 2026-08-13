@@ -85,7 +85,7 @@ export default function Home() {
           📞 382350555-5555
         </div>
         <div className="contact-bar-item">
-          ✉️ Chandramauli@gmail.com
+          ✉️ Chandraka@gmail.com
         </div>
       </div>
 

@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Salon Demo
 
-## Getting Started
+A polished, responsive concept website for a luxury hair salon. It showcases salon services, hair transformations, a visual portfolio, contact details, and an appointment-selection experience.
 
-First, run the development server:
+## Highlights
+
+- Editorial-style landing page with salon imagery and a looping feature video
+- Service menu with interactive category tabs
+- Before-and-after gallery and client testimonials carousel
+- Portfolio gallery
+- Contact and opening-hours page
+- Appointment-selection interface with service durations and prices
+- Responsive layout built with Next.js and React
+
+## Routes
+
+| Route | Description |
+| --- | --- |
+| `/` | Homepage, services preview, Aqua Therapy feature, transformations, and testimonials |
+| `/services` | Categorised service and pricing menu |
+| `/portfolio` | Hair and salon image gallery |
+| `/contact` | Salon location, hours, and contact information |
+| `/book-appointment` | Appointment service-selection interface |
+
+## Tech stack
+
+- [Next.js](https://nextjs.org/) 16
+- React 19
+- TypeScript
+- CSS modules/global styles in `src/app/globals.css`
+- Next.js `Image` component for optimized image rendering
+
+## Run locally
+
+Prerequisite: Node.js 20.9 or newer.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev    # Start the development server
+npm run lint   # Run ESLint
+npm run build  # Create a production build
+npm run start  # Serve the production build
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/
+  app/                 # App Router pages and global styling
+    services/           # Service menu
+    portfolio/          # Gallery page
+    contact/            # Contact page
+    book-appointment/   # Appointment selection page
+  components/           # Shared header and footer
+public/
+  assets/               # Salon photography and logo
+  salon_video.mp4       # Homepage feature video
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Note
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is a front-end concept. The appointment buttons demonstrate the booking flow visually; they do not currently submit appointments or connect to a backend.
